@@ -1,0 +1,33 @@
+Dear Lenovo,
+
+I hope this letter finds you well. I understand that you are looking for a Python program to check if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+
+Here is a simple Python program that checks if a given string is a palindrome:
+
+```python
+def is_palindrome(s):
+    s = ''.join(c for c in s if c.isalnum()).lower()
+    return s == s[::-1]
+
+# Test the function
+s = input("Enter a string: ")
+if is_palindrome(s):
+    print(s, "is a palindrome.")
+else:
+    print(s, "is not a palindrome.")
+```
+
+In this program, the `is_palindrome` function takes a string `s` as input and first removes all non-alphanumeric characters from the string and converts it to lowercase. It then checks if the resulting string is the same when reversed (`s[::-1]`). If it is, the function returns `True`, indicating that the string is a palindrome. Otherwise, it returns `False`.
+
+You can test the function by entering a string when prompted. If the string is a palindrome, the program will print a message indicating that it is a palindrome. Otherwise, it will print a message indicating that it is not a palindrome.
+
+For example, if you enter the string "radar", the program will output:
+
+```
+radar is a palindrome.
+```
+
+I hope this helps! Let me know if you have any questions or need further assistance.
+
+Best regards,
+[Your Name]

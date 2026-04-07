@@ -1,0 +1,38 @@
+Dear Lenovo,
+
+I am writing to provide you with a Python program that checks if a given string is a palindrome or not. Below is the program:
+
+```
+def is_palindrome(s):
+    s = s.replace(" ", "")  # remove spaces
+    s = s.lower()  # convert to lowercase
+    return s == s[::-1]  # check if string is equal to its reverse
+
+def main():
+    print("Palindrome Checker")
+    print("------------------")
+    s = input("Enter a string: ")
+    if is_palindrome(s):
+        print(s + " is a palindrome")
+    else:
+        print(s + " is not a palindrome")
+
+if __name__ == "__main__":
+    main()
+```
+
+To use this program, follow these steps:
+
+1. Open Notepad and create a new file.
+2. Copy the above code and paste it into the Notepad file.
+3. Save the file with a `.py` extension (e.g., `palindrome.py`).
+4. Open a command prompt or terminal and navigate to the directory where you saved the file.
+5. Type `python palindrome.py` to run the program.
+6. Enter a string when prompted, and the program will tell you if it's a palindrome or not.
+
+This program defines a function `is_palindrome` that takes a string `s` as input and returns `True` if it's a palindrome and `False` otherwise. The `main` function gets user input, checks if it's a palindrome, and prints the result.
+
+I hope this helps! Let me know if you have any questions or need further assistance.
+
+Best regards,
+[Your Name]
